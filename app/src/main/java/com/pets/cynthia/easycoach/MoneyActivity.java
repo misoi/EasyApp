@@ -7,25 +7,23 @@ import android.view.View;
 import android.widget.Button;
 
 /**
- * Created by cynthia on 5/29/16.
+ * Created by cynthia on 6/1/16.
  */
-public class ContActivity extends AppCompatActivity {
+public class MoneyActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.cont);
-        Button button;
+        setContentView(R.layout.money); Button button;
 
-        button = (Button)findViewById(R.id.button2);
+        button = (Button)findViewById(R.id.button3);
         button.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
-                    Intent intent = new Intent(ContActivity.this,MoneyActivity.class);
+                Intent intent = new Intent(MoneyActivity.this,SeatsActivity.class);
                 startActivity(intent);
             }
         });
     }
 }
-

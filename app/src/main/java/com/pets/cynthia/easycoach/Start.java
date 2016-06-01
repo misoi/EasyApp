@@ -1,7 +1,10 @@
 package com.pets.cynthia.easycoach;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.View;
+import android.widget.Button;
 
 import com.github.paolorotolo.appintro.AppIntro;
 
@@ -28,6 +31,9 @@ public class Start extends AppIntro {
     public void onDonePressed(Fragment currentFragment) {
         super.onDonePressed(currentFragment);
         // Do something when users tap on Done button.
+
+        Intent intent = new Intent(Start.this,DetailsActivity.class);
+        startActivity(intent);
     }
 
     @Override
